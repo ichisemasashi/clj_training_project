@@ -35,3 +35,10 @@ number(List<string>{"a", "b", "c"}) // => ["1: a", "2: b", "3: c"]
 
 *  (iterate f x)
   x, (f x), (f (f x)) … の遅延シーケンスを返す f は副作用がないこと
+
+```clojure
+renshu.core=> (time (take 10000 (rest (range))))
+"Elapsed time: 0.237308 msecs"
+renshu.core=> (time (take 10000 (iterate inc 1)))
+"Elapsed time: 5.07732 msecs"
+```
