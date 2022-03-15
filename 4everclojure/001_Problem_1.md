@@ -1,4 +1,4 @@
-# Problem 1
+# Problem 1: Nothing but the Truth
 
 式を完成させ、trueと評価されるようにします。
 
